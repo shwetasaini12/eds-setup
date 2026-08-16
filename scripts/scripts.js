@@ -16,6 +16,7 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
     createHTML: (s) => s, // avoid stack overflow
   });
+  console.log("salman");
 
   window.trustedTypes.createPolicy('default', {
     createHTML: (input, type, sink) => {
